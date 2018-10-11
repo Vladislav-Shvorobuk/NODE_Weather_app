@@ -1,0 +1,13 @@
+div{
+    height: 300px;
+    width: 60%;
+    margin-top: 20px;
+    border: 2px solid red;
+}
+button{
+    background-color: bisque;
+    border: 1px solid;
+}
+button:active {
+    background-color: rgba(240, 142, 120, 0.596);
+}
