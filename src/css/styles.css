@@ -1,17 +1,49 @@
-div{
-    height: 300px;
-    width: 60%;
-    margin-top: 20px;
-    border: 2px solid red;
-    padding: 30px;
+body {
+    background-image: url("/src/images/back4.jpg");  	
+    background-repeat: no-repeat;
+    background-size: cover; 
+ 
 }
-button{
-    background-color: bisque;
-    border: 1px solid;
+.container {
+    min-width: 368px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
 }
-button:active {
-    background-color: rgba(240, 142, 120, 0.596);
+.navbar {
+    margin: auto;
+    margin-top: 30px;
+    background-image: url("/src/images/back3.jpg");  	
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 10px;
 }
-p{
-    font-size: 25px;
+.btn {
+   background-color:  transparent;
+   color: white;
 }
+
+.navbar-brand {
+    font-size: 24px;
+    margin-left: 14px;
+    color: white !important;
+}
+.navbar-right{
+    margin-top: 5px;
+}
+
+@media (max-width: 992px) and (min-width: 768px) { 
+    .navbar-brand {
+        
+        margin-left: 32px;
+    }
+}
+@media (max-width: 767px) { 
+    .navbar {
+    
+        margin-top: 0px;
+      
+    }
+
+}
+
