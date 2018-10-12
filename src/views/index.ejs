@@ -6,14 +6,19 @@
 
     <link  rel="stylesheet" type="text/css" href="src/css/styles.css">  
 
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script  src="src/js/script.js"></script>
 </head>
 <body>
-<h1>ID = <%= id %></h1>
+
  <button>PUSH ME</button>
  <div>
-
+    <p><%= cityWeather.name %></p>
+    <p><%= cityWeather.wind.speed %></p>
+    <p><%= cityWeather.wind.deg %></p>
+   
+   
+  
 
  </div>
 

@@ -3,6 +3,7 @@ div{
     width: 60%;
     margin-top: 20px;
     border: 2px solid red;
+    padding: 30px;
 }
 button{
     background-color: bisque;
@@ -10,4 +11,7 @@ button{
 }
 button:active {
     background-color: rgba(240, 142, 120, 0.596);
+}
+p{
+    font-size: 25px;
 }
