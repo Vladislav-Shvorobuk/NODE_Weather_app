@@ -21,6 +21,7 @@ body {
 .btn {
    background-color:  transparent;
    color: white;
+   font-size: 17px;
 }
 
 .navbar-brand {
@@ -31,6 +32,37 @@ body {
 .navbar-right{
     margin-top: 5px;
 }
+.panel {
+    position: relative;
+}
+.form-control {
+    font-size: 17px;
+}
+.dataBlock {
+    margin-top: 30px;
+    padding: 0;
+    height: 70px;
+}
+.data {
+    background-color: #494949;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 24px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 12px;
+    opacity: 0.7;
+}
+.left .city{
+    font-weight: bold;
+}
+.description {
+    font-weight: bold;
+    color: black;
+    
+}
 
 @media (max-width: 992px) and (min-width: 768px) { 
     .navbar-brand {
@@ -40,10 +72,17 @@ body {
 }
 @media (max-width: 767px) { 
     .navbar {
-    
         margin-top: 0px;
-      
     }
-
+    .right button {
+        margin-right: 35px;
+    }
 }
+@media (max-width: 367px) { 
+  
+    .right button {
+        margin-right: 18px;
+    }
+}
+
 
