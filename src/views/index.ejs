@@ -28,9 +28,26 @@
             </form>
     </nav>
     
+    
     <div class="dataBlock col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <% cities.forEach(function(cityWeather, index){ %>
 
+            <div class="data col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                    <div class="left col-xs-12 col-sm-6 col-md-6 col-lg-6">  
+                        <p class="yourCity">Weather in your city</p>  
+                        <p class="city" id ="userCity"></p>
+                        <p><span class="description">weather: </span><span id ="userCityWeather"></span></p> 
+                    </div>
+                    <div class="right col-xs-12 col-sm-6 col-md-6 col-lg-6">    
+                        <p><span class="description" >temperature: </span> <span id ="userCityTemp"> </span></p> 
+                        <p><span class="description">pressure: </span> <span id ="userCityPressure"> </span></p>
+                        <p><span class="description">wind: </span> <span id ="userCitytWind"> </span></p>
+                    </div>       
+              
+             </div>
+
+
+        <% cities.forEach(function(cityWeather, index){ %>
         <div class="data col-xs-12 col-sm-12 col-md-12 col-lg-12" id=<%= index %>>
 
                 <div class="left col-xs-12 col-sm-6 col-md-6 col-lg-6">    
@@ -45,14 +62,9 @@
                 </div>       
           
             </div>
-
-
-    <% });%>
+          <% });%>
       
-               
-
     </div>
-
 
 </div>
 

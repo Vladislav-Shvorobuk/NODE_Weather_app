@@ -1,7 +1,6 @@
 "use strict"
 const express = require("express");
 const request = require('request');
-const cheerio = require('cheerio');
 const bodyParser = require("body-parser");
 const urlencodedParser = bodyParser.urlencoded({extended:true});
 const app = express();
@@ -23,6 +22,7 @@ app.get("/", function(req, res ){
   }) 
 });
 
+
 app.post("/view", urlencodedParser, function(req, res){
     if(!req.body) return res.sendStatus(400);
    
@@ -31,6 +31,7 @@ app.post("/view", urlencodedParser, function(req, res){
     let promise = new Promise((resolve, reject) => {
 
     request(url, function(error, res, data){
+  
       if (!error && res.statusCode == 404) {
         resolve(res.statusCode);
         console.log(res.statusCode + " Please, check city name.");
@@ -42,7 +43,7 @@ app.post("/view", urlencodedParser, function(req, res){
           obj.name,
           obj.sys.country,  
           obj.weather[0].description,
-          obj.main.temp,
+          parseInt(obj.main.temp),
           obj.main.pressure,
           obj.wind.speed
         ];
