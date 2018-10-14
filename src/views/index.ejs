@@ -22,7 +22,7 @@
            
             <form class="navbar-right col-xs-12 col-sm-12 col-md-8 col-lg-6" role="search" method="post" action="/view">
                     <div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
-                        <input type="text" name="city" class="form-control" placeholder="Enter the city...">
+                        <input type="text" name="city" required="required" class="form-control" placeholder="Enter the city...">
                     </div>
                 <button type="submit" class="btn btn-default">Search</button>
             </form>
@@ -41,7 +41,7 @@
                     <p><span class="description">temperature: </span>   <span><%= cityWeather[3] %> C<sup>o</sup></span></p> 
                     <p><span class="description">pressure: </span>      <span><%= cityWeather[4] %> hPa</span></p>
                     <p><span class="description">wind: </span>          <span><%= cityWeather[5] %> mps</span></p>
-                    <button  class="delete btn btn-default pull-right">Delete</button>
+                    <button type="button" class="delete btn btn-default pull-right" id=<%= index %> >Delete</button>
                 </div>       
           
             </div>
